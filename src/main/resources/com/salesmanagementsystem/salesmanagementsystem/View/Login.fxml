@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.salesmanagementsystem.salesmanagementsystem.Controller.SalesManagementSystemController">
+   <left>
+      <AnchorPane prefHeight="258.0" prefWidth="279.0" styleClass="bg" stylesheets="@../loginFormDesign.css" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="sideForm" prefHeight="290.0" prefWidth="279.0" stylesheets="@../loginFormDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="114.0" fitWidth="96.0" layoutX="150.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="215.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="97.0">
+                     <image>
+                        <Image url="C:\Users\Hi Windows 10 Pro\IdeaProjects\SalesManagementSystem\src\main\resources\icon\cd.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="111.0" fitWidth="111.0" layoutX="35.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="206.0" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="91.0">
+                     <image>
+                        <Image url="C:\Users\Hi Windows 10 Pro\IdeaProjects\SalesManagementSystem\src\main\resources\icon\books.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="42.0" layoutY="219.0" prefHeight="30.0" prefWidth="201.0" styleClass="label-1" stylesheets="@../loginFormDesign.css" text="Management System" textFill="#f5ead0" AnchorPane.bottomAnchor="159.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="219.0">
+                     <font>
+                        <Font name="Century" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="194.0" prefHeight="36.0" prefWidth="223.0" styleClass="label-1" stylesheets="@../loginFormDesign.css" text="Books &amp; Records Shop " AnchorPane.bottomAnchor="174.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="194.0">
+                     <font>
+                        <Font name="Century" size="22.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="alreadyAccount_btn" layoutX="51.0" layoutY="358.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="32.0" prefWidth="184.0" stylesheets="@../loginFormDesign.css" text="Already have an Account" underline="true">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn2" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="Createacc_btn" layoutX="51.0" layoutY="358.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="32.0" prefWidth="184.0" stylesheets="@../loginFormDesign.css" text="Create an Account" underline="true">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn2" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="418.0" prefWidth="576.0" style="-fx-background-color: #eeeeee;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="signUpForm" prefHeight="418.0" prefWidth="469.0" styleClass="bg-2" stylesheets="@../loginFormDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="65.0" layoutY="138.0" text="Username*" textFill="#0bd69c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="66.0" fitWidth="63.0" layoutX="172.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="302.0" AnchorPane.leftAnchor="172.0" AnchorPane.rightAnchor="172.0" AnchorPane.topAnchor="51.0">
+                     <image>
+                        <Image url="C:\Users\Hi Windows 10 Pro\IdeaProjects\SalesManagementSystem\src\main\resources\icon\img_3.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="65.0" layoutY="172.0" text="Password*" textFill="#0bd69c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="susername" layoutX="153.0" layoutY="133.0" onAction="#regBtn" prefHeight="29.0" prefWidth="186.0" styleClass="textfield" stylesheets="@../loginFormDesign.css" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="71.0" />
+                  <Button fx:id="signUp_btn" layoutX="168.0" layoutY="333.0" mnemonicParsing="false" onAction="#regBtn" prefHeight="30.0" prefWidth="76.0" styleClass="btn2" stylesheets="@../loginFormDesign.css" text="Sign Up" textFill="#0bd69c" underline="true" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="167.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="66.0" layoutY="206.0" text="Fullname*" textFill="#0bd69c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="66.0" layoutY="242.0" text="Email" textFill="#0bd69c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="66.0" layoutY="276.0" text="Phone*" textFill="#0bd69c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="sfullname" layoutX="152.0" layoutY="201.0" onAction="#regBtn" prefHeight="25.0" prefWidth="186.0" styleClass="textfield" stylesheets="@../loginFormDesign.css" />
+                  <TextField fx:id="semail" layoutX="152.0" layoutY="237.0" onAction="#regBtn" prefHeight="25.0" prefWidth="186.0" styleClass="textfield" stylesheets="@../loginFormDesign.css" />
+                  <TextField fx:id="sphone" layoutX="152.0" layoutY="271.0" onAction="#regBtn" prefHeight="25.0" prefWidth="186.0" styleClass="textfield" stylesheets="@../loginFormDesign.css" />
+                  <PasswordField fx:id="spassword" layoutX="153.0" layoutY="168.0" onAction="#regBtn" prefHeight="25.0" prefWidth="186.0" styleClass="textfield" stylesheets="@../loginFormDesign.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="loginForm" prefHeight="410.0" prefWidth="401.0" styleClass="bg-2" stylesheets="@../loginFormDesign.css">
+               <children>
+                  <Label layoutX="70.0" layoutY="168.0" text="Username" textFill="#0bd69c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="66.0" fitWidth="63.0" layoutX="171.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="269.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="167.0" AnchorPane.topAnchor="78.0">
+                     <image>
+                        <Image url="C:\Users\Hi Windows 10 Pro\IdeaProjects\SalesManagementSystem\src\main\resources\icon\img_2.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="72.0" layoutY="220.0" text="Password" textFill="#0bd69c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="_username" layoutX="145.0" layoutY="166.0" onAction="#loginBtn" prefHeight="25.0" prefWidth="186.0" styleClass="textfield" stylesheets="@../loginFormDesign.css" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="64.0" />
+                  <PasswordField fx:id="_password" layoutX="145.0" layoutY="218.0" onAction="#loginBtn" prefHeight="25.0" prefWidth="186.0" styleClass="textfield" stylesheets="@../loginFormDesign.css" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="64.0" AnchorPane.topAnchor="218.0" />
+                  <Button fx:id="Login_btn" layoutX="270.0" layoutY="307.0" mnemonicParsing="false" onAction="#loginBtn" prefHeight="29.0" prefWidth="62.0" styleClass="btn2" stylesheets="@../loginFormDesign.css" text="Login" textFill="#0bd69c" underline="true" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="65.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="_forgotrpassword" layoutX="146.0" layoutY="269.0" onDragDetected="#switchForgotPass" onMouseClicked="#switchForgotPass" styleClass="bg-2" stylesheets="@../loginFormDesign.css" text="Forgot Password" textFill="#0bd69c" underline="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="forgot_form" layoutY="2.0" prefHeight="410.0" prefWidth="401.0" styleClass="bg-2" stylesheets="@../loginFormDesign.css" visible="false">
+               <children>
+                  <Label layoutX="70.0" layoutY="168.0" text="Username" textFill="#0bd69c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="66.0" fitWidth="63.0" layoutX="171.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="269.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="167.0" AnchorPane.topAnchor="78.0">
+                     <image>
+                        <Image url="C:\Users\Hi Windows 10 Pro\IdeaProjects\SalesManagementSystem\src\main\resources\icon\forgot.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="72.0" layoutY="220.0" text="Phone" textFill="#0bd69c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fg_username" layoutX="145.0" layoutY="166.0" prefHeight="25.0" prefWidth="186.0" styleClass="textfield" stylesheets="@../loginFormDesign.css" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="64.0" />
+                  <PasswordField fx:id="fg_phone" layoutX="145.0" layoutY="218.0" prefHeight="25.0" prefWidth="186.0" styleClass="textfield" stylesheets="@../loginFormDesign.css" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="64.0" AnchorPane.topAnchor="218.0" />
+                  <Button fx:id="fg_proceed_btn" layoutX="108.0" layoutY="266.0" mnemonicParsing="false" onAction="#proceedBtn" prefHeight="34.0" prefWidth="193.0" styleClass="btn2" stylesheets="@../loginFormDesign.css" text="Proceed" textFill="#0bd69c" underline="true" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="104.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="fg_back_btn" layoutX="14.0" layoutY="373.0" mnemonicParsing="false" onAction="#backToLoginForm" onMouseClicked="#backToLoginForm" prefHeight="25.0" prefWidth="48.0" textFill="#222504" />
+                  <FontAwesomeIcon fill="#0bd69c" glyphName="ARROW_LEFT" layoutX="28.0" layoutY="391.0" size="1.5em" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="confirm_form" layoutY="8.0" prefHeight="410.0" prefWidth="401.0" styleClass="bg-2" stylesheets="@../loginFormDesign.css" visible="false">
+               <children>
+                  <Label layoutX="44.0" layoutY="168.0" text="New Password" textFill="#0bd69c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="66.0" fitWidth="63.0" layoutX="171.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="269.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="167.0" AnchorPane.topAnchor="78.0">
+                     <image>
+                        <Image url="C:\Users\Hi Windows 10 Pro\IdeaProjects\SalesManagementSystem\src\main\resources\icon\img_5.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="45.0" layoutY="221.0" text="Confirm Password" textFill="#0bd69c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="cf_cfPassword" layoutX="172.0" layoutY="218.0" onAction="#changePassBtn" prefHeight="25.0" prefWidth="186.0" styleClass="textfield" stylesheets="@../loginFormDesign.css" AnchorPane.leftAnchor="172.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="218.0" />
+                  <Button fx:id="cf_changePass_btn" layoutX="106.0" layoutY="269.0" mnemonicParsing="false" onAction="#changePassBtn" prefHeight="34.0" prefWidth="193.0" styleClass="btn2" stylesheets="@../loginFormDesign.css" text="Change Password" textFill="#0bd69c" underline="true" AnchorPane.bottomAnchor="109.0" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="106.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cf_back_btn" layoutX="14.0" layoutY="373.0" mnemonicParsing="false" onAction="#backToForgotPassForm" prefHeight="25.0" prefWidth="48.0" textFill="#222504" />
+                  <FontAwesomeIcon fill="#0bd69c" glyphName="ARROW_LEFT" layoutX="28.0" layoutY="391.0" onMouseClicked="#backToForgotPassForm" size="1.5em" />
+                  <PasswordField fx:id="cf_newPassword" layoutX="173.0" layoutY="165.0" onAction="#changePassBtn" prefHeight="29.0" prefWidth="188.0" styleClass="textfield" stylesheets="@../loginFormDesign.css" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

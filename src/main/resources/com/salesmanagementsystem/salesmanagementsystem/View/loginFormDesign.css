@@ -1,0 +1,46 @@
+//.header-label{
+//    -fx-border-color: ;
+//    -fx-border-width: ;
+//    -fx-padding: 0 0 0 5px;
+//}
+.label-1 {
+    //-fx-background-color:  FBFFDC;
+    -fx-cursor: hand;
+    -fx-text-fill: #884a39;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+.label-2{
+    -fx-cursor: hand;
+    -fx-text-fill: #b9a3a3;
+    -fx-font-size: 12px;
+}
+.bg {
+    -fx-background-color:  FBFFDC;
+}
+.bg-2 {
+    //-fx-border-width: 0 0 0 5 px;
+    -fx-border-color: #f5ead0;
+    -fx-background-color: linear-gradient(to right, #feffdc, #e8e3d9)
+}
+.btn {
+    -fx-background-color:  FBFFDC;
+    -fx-cursor: hand;
+    -fx-text-fill: #884a39;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-border-color: #C98E7E;
+    -fx-border-size: 1px;
+    -fx-border-radius: 3px
+}
+.btn2:hover{
+    -fx-background-color:  #E2E6C6;
+}
+.textfield{
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to left, #fffffc, #e8e3a0);
+    -fx-border-width: 1.5px;
+}
+.TextField:hover{
+    -fx-background-color:  #fffffc;
+}
